@@ -1,30 +1,12 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This repository contains codes of realizing a basic database management system.
 
+This programming project was done when I didn't have too much coding experience. So coding habit in the repository is very bad, especially that codes are written in .h file.
 
-Hi there! Welcome to Cloud9 IDE!
+Nevertheless, this is the most intensive coding experience I have ever had. More than 6000 lines are finished in slightly more than 2 weeks.
 
-To get you started with C/C++, we have created some small hello world
-applications and a Makefile.
-
-Have a look at the files, and use the terminal to build them:
-
-    $ make
-    $ ./hello-c-world
-    $ ./hello-cpp-world
-
-We're sure you can take it from there. Go ahead and edit the code, 
-or add some new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Contents:
+     
+     1. 'myParser.h' contains codes that compile database command texts to a parse tree.
+     2. 'myOptimization.h' contains codes that optimize the parse tree to a physical query plan, including pushing down                selection operations, ordering join operations using dynamic programming and so on.
+     3. 'myExecution.h' contains codes that execute database commands. One-pass algorithms and two-pass algorithms are
+         implemented to reduce disk I/O.
